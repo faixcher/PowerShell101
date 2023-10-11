@@ -9,7 +9,7 @@ Get-Childitem -Directory -Hidden -Filter ".pdf"
 output >> list only .pdf 
 ```
 
-count word/row 
+count word of file 
 ```powershell
 Get-Content hello.txt | Measure-Object -Word
 
@@ -23,7 +23,7 @@ look content in file with INDEX
 output >> fais , saleng 
 ```
 
-look content if file with STRING
+look content in file with STRING
 ```powershell
 get-content hello.txt | Select-String  -Pattern 'fais'
 
